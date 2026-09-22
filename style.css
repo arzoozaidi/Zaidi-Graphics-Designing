@@ -299,8 +299,16 @@ footer {
     height: auto;
 }
 
+.project-image {
+    height: 262px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 .project-image img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: contain;
 }
