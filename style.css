@@ -1,7 +1,3 @@
-/* =========================
-   BASIC SETTINGS
-========================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -20,15 +16,13 @@ body {
 }
 
 
-/* =========================
-   NAVBAR
-========================= */
+/* ================= NAVBAR ================= */
 
 .navbar {
     width: 100%;
-    height: 80px;
+    height: 75px;
 
-  background: #F0F0F0;
+    background: #1E293B;
 
     display: flex;
     align-items: center;
@@ -44,16 +38,14 @@ body {
 }
 
 
-/* LOGO */
-
 .logo {
     display: flex;
     align-items: center;
 }
 
-.logo img { 
-    width: 150px;
-    height: 80px;
+.logo img {
+    width: 100px;
+    height: 40px;
 
     object-fit: contain;
 
@@ -61,15 +53,13 @@ body {
 }
 
 
-/* NAV LINKS */
-
 .navbar nav {
     display: flex;
     gap: 32px;
 }
 
 .navbar nav a {
-    color: #000000;
+    color: #ffffff;
 
     text-decoration: none;
 
@@ -84,10 +74,7 @@ body {
 }
 
 
-
-/* =========================
-   HOME / HERO
-========================= */
+/* ================= HOME ================= */
 
 .hero {
     min-height: 650px;
@@ -177,10 +164,7 @@ body {
 }
 
 
-
-/* =========================
-   300 x 300 PHOTO BOX
-========================= */
+/* ================= PHOTO ================= */
 
 .photo-box {
 
@@ -225,27 +209,20 @@ body {
 }
 
 
-
-/* =========================
-   GENERAL SECTIONS
-========================= */
+/* ================= SECTIONS ================= */
 
 .section {
-
     padding: 90px 10%;
 }
 
 
 .section-title {
-
     text-align: center;
-
     margin-bottom: 50px;
 }
 
 
 .section-title p {
-
     color: #0284c7;
 
     font-size: 13px;
@@ -259,17 +236,13 @@ body {
 
 
 .section-title h2 {
-
     font-size: 38px;
 
     color: #111827;
 }
 
 
-
-/* =========================
-   ABOUT
-========================= */
+/* ================= ABOUT ================= */
 
 .about-content {
 
@@ -283,7 +256,8 @@ body {
 
     border-radius: 12px;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.07);
 }
 
 
@@ -302,13 +276,9 @@ body {
 }
 
 
-
-/* =========================
-   SKILLS
-========================= */
+/* ================= SKILLS ================= */
 
 .skills-section {
-
     background: #f1f5f9;
 }
 
@@ -367,13 +337,9 @@ body {
 }
 
 
-
-/* =========================
-   PORTFOLIO
-========================= */
+/* ================= PORTFOLIO ================= */
 
 .portfolio-section {
-
     background: #ffffff;
 }
 
@@ -415,43 +381,41 @@ body {
 }
 
 
-/* PORTFOLIO IMAGE BOX */
+/* ================= A4 IMAGE BOX ================= */
 
 .portfolio-image {
 
     width: 100%;
 
-    height: 230px;
+    height: 350px;
 
     overflow: hidden;
 
-    background: #e5e7eb;
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
 }
 
 
 .portfolio-image img {
 
     width: 100%;
+
     height: 100%;
 
-    object-fit: cover;
+    object-fit: contain;
 
     display: block;
-
-    transition: 0.4s;
 }
 
 
-.portfolio-card:hover .portfolio-image img {
-
-    transform: scale(1.05);
-}
-
-
-/* PORTFOLIO TEXT */
+/* ================= PORTFOLIO TEXT ================= */
 
 .portfolio-info {
-
     padding: 20px;
 }
 
@@ -474,13 +438,9 @@ body {
 }
 
 
-
-/* =========================
-   CONTACT
-========================= */
+/* ================= CONTACT ================= */
 
 .contact-section {
-
     background: #f1f5f9;
 }
 
@@ -532,10 +492,7 @@ body {
 }
 
 
-
-/* =========================
-   FOOTER
-========================= */
+/* ================= FOOTER ================= */
 
 footer {
 
@@ -551,10 +508,7 @@ footer {
 }
 
 
-
-/* =========================
-   MOBILE
-========================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 900px) {
 
@@ -641,6 +595,10 @@ footer {
     .skills-grid,
     .portfolio-grid {
         grid-template-columns: 1fr;
+    }
+
+    .portfolio-image {
+        height: 350px;
     }
 
 }
